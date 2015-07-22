@@ -1,0 +1,37 @@
+<link rel="import" href="../paper-input/paper-input.html">
+<link rel="import" href="../core-ajax/core-ajax.html">
+
+<polymer-element name="email-login">
+
+  <template>
+    <style>
+      #paper_input {
+        left: 360px;
+        top: 190px;
+        position: absolute;
+      }
+      #paper_input1 {
+        left: 360px;
+        top: 230px;
+        position: absolute;
+      }
+      #core_ajax {
+        left: 350px;
+        top: 240px;
+        position: absolute;
+      }
+    </style>
+    <paper-input label="Email Address" willvalidate id="paper_input" layout vertical></paper-input>
+    <paper-input label="Password" willvalidate id="paper_input1" layout vertical></paper-input>
+    <core-ajax handleas="json" method="GET" id="core_ajax" hidden></core-ajax>
+  </template>
+
+  <script>
+
+    Polymer({
+
+    });
+
+  </script>
+
+</polymer-element>
